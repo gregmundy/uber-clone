@@ -35,7 +35,7 @@ const NavOptions = () => {
                 onPress={() => navigation.navigate(item.screen)}
                 disabled={!origin}
                 >
-                <View style={tw`${!origin && 'opacity-20'}`}>
+                <View style={!origin && tw`opacity-20`}>
                     <Image
                         source={{ uri: item.image }}
                         style={{ width: 120, height: 120, resizeMode: 'contain' }}
